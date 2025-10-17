@@ -1,0 +1,57 @@
+#!name=Config4Streaming-AdBlock
+#!desc=Adblock module for PangGuaiLife / BaiduPan / Bilibili / TencentVideo / Youku / Zhihu / PDD / Taobao / Xianyu
+#!author=Yunxing Zhong
+#!version=2025.10.17
+#!platform=ios,android
+
+[Rule]
+# 基础去广告规则（通用域名拦截）
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list,REJECT
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Rule/AdBlock.list,REJECT
+
+# 兜底广告/跟踪域名（阻断）
+DOMAIN-SUFFIX,googlesyndication.com,REJECT
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+DOMAIN-SUFFIX,adservice.google.com,REJECT
+DOMAIN-SUFFIX,adsafeprotected.com,REJECT
+DOMAIN-KEYWORD,ads,REJECT
+DOMAIN-KEYWORD,track,REJECT
+
+# 将下列域名走 DIRECT（脚本层面处理）/或者用于 MITM
+DOMAIN-SUFFIX,bilibili.com,DIRECT
+DOMAIN-SUFFIX,qq.com,DIRECT
+DOMAIN-SUFFIX,youku.com,DIRECT
+DOMAIN-SUFFIX,bdstatic.com,DIRECT
+DOMAIN-SUFFIX,baidu.com,DIRECT
+DOMAIN-SUFFIX,pan.baidu.com,DIRECT
+DOMAIN-SUFFIX,zhihu.com,DIRECT
+DOMAIN-SUFFIX,pinduoduo.com,DIRECT
+DOMAIN-SUFFIX,taobao.com,DIRECT
+DOMAIN-SUFFIX,xianyu.com,DIRECT
+DOMAIN-SUFFIX,pangguai.com,DIRECT
+
+[Script]
+# NOTE: These url-script entries currently reference local filenames.
+# For Surge Module import to use them remotely, upload the `modules/` scripts to a public raw URL (e.g. GitHub)
+# and replace the `url-script` value with the raw HTTP(S) link.
+http-response ^https?:\/\/api\.live\.bilibili\.com\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/bilibili_remove_ad.js
+http-response ^https?:\/\/api\.bilibili\.com\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/bilibili_remove_ad.js
+http-response ^https?:\/\/upos.*?\.bilibili\.com\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/bilibili_player_ad.js
+
+http-response ^https?:\/\/api\.youku\.com\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/youku_remove_ad.js
+
+http-response ^https?:\/\/v\.tanzi\.cdn\.tencent\.com\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/tencent_player_ad.js
+http-response ^https?:\/\/v\.qq\.com\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/tencentvideo_remove_ad.js
+
+http-response ^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/baidupan_remove_ad.js
+
+http-response ^https?:\/\/api\.zhihu\.com\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/zhihu_remove_ad.js
+
+http-response ^https?:\/\/.*pinduoduo.*\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/pdd_remove_ad.js
+http-response ^https?:\/\/.*taobao.*\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/taobao_remove_ad.js
+http-response ^https?:\/\/.*xianyu.*\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/xianyu_remove_ad.js
+
+http-response ^https?:\/\/.*pangguai.*\/.* url-script = https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/modules/pangguai_remove_ad.js
+
+[MITM]
+hostname = api.bilibili.com, app.bilibili.com, api.live.bilibili.com, upos-hz-mirrorakamai.bilibili.com, v.tanzi.qq.com, v.qq.com, video.qq.com, api.youku.com, pan.baidu.com, baidu.com, api.zhihu.com, zhihu.com, pinduoduo.com, taobao.com, xianyu.com, pangguai.com

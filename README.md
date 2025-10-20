@@ -1,29 +1,29 @@
-# Config4Streaming · All-in Streaming
+# Config4Streaming · Enjoy All Streaming
 
-[中文 | Chinese → README-zh.md](./README-zh.md)
+[中文 → README-zh.md](./README-zh.md)
 
->A Surge streaming split-routing configuration that mirrors my **Loon** setup.
+> A Surge streaming split configuration that tries to faithfully reproduce my **Loon** setup.
 
 - **Config file**: [`Surge4Streaming.conf`](./Surge4Streaming.conf)  
-- **Loon version**: please refer to → https://github.com/Sifortonzh/Loon4Streaming  
-- **Status**: macOS screenshots · **iOS screenshots pending**
+- **Loon edition**: please refer to → https://github.com/Sifortonzh/Loon4Streaming  
+- **Status**: iOS/macOS screenshots included.
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- Dedicated policy groups (with priorities) for the major streamers: **YouTube / Netflix / Disney+ / Hulu / HBO Max / Prime Video / Paramount+ / Starz**.
-- Regional groups (**HK/US/JP/KR/TW/SG**) + smart **Rare Areas** (auto-collects all other, unrecognized regions).
-- App/service groups for **Google, GitHub, Telegram, X, TikTok, PayPal, Apple, Microsoft, AI**, etc.
-- Built on the **Rabbit-Spec [深巷有喵]** general skeleton + **BlackMatrix7** Surge rule sets.
-- Icons from **Koolson/Qure** and **Orz-3/mini**.
-- Default details: Google prefers **HK**, PayPal goes **US**, Starz: **US → HK → SG**.
+- **Independent policy groups and priorities** for mainstream streaming platforms (YouTube / Netflix / Disney+ / Hulu / HBO Max / Prime Video / Paramount+ / STARZ).
+- Regional groups (HK/US/JP/KR/TW/SG) + smart **Rare Areas** (automatically collects other unrecognized regions).
+- Common service groups (Google, GitHub, Telegram, X, TikTok, PayPal, Apple, Microsoft, AI, etc.).
+- Built on **Rabbit‑Spec [ShenXiangYouMiao]** general Surge skeleton + **BlackMatrix7** rule sets for Surge.
+- Icons from **Koolson/Qure** and **Orz‑3/mini**.
+- Default details: Google prefers HK, PayPal via US, STARZ: US.
 
-> **Tip**: Replace `policy-path=你的订阅地址` in the config with your own Surge subscription URL (or the one from your provider).
+> **Tip**: Replace `policy-path=YOUR_SUBSCRIPTION_URL` in the config with your own Surge subscription link (or the one provided by your provider).
 
 ---
 
-## 📦 Directory layout
+## 📦 Directory Structure
 
 ```bash
 .
@@ -35,66 +35,66 @@
 
 ---
 
-## 🧭 Quick start (Surge · macOS)
+## 🧭 Quick Start (Surge · macOS)
 
 1. Download [`Surge4Streaming.conf`](./Surge4Streaming.conf).  
-2. In **Surge** → **Profiles** → **Open External Profile**, import this file. Or fetch from URL:
+2. In **Surge** → **Profiles** → **Open External Profile**, import the file. Or download from URL:
 
    ```bash
    https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/Surge4Streaming.conf
    ```
-3. Edit `policy-path=你的订阅地址` to your actual subscription URL.  
+3. Edit `policy-path=YOUR_SUBSCRIPTION_URL` to your real subscription URL.  
 4. Save and enable.
+5. On iOS, using “Modules” requires setting up the certificate; the method is the same as in Loon.
 
 **Screenshots (macOS)**  
-![Surge panel](./images/Mac-1.png)  
-![Policy groups](./images/Mac-2.png)
+![Surge Panel](./images/Mac-1.png)  
+![Policy Groups Overview](./images/Mac-2.png)
 
 ---
 
 ## 📱 iOS
 
-> **We currently don’t have Surge iOS on hand. Feedback and screenshots are welcome.**
+![Surge Panel](./images/iOS-1.png)![Surge Panel](./images/iOS-2.png)
 
-If added later, please place iOS screenshots under `images/ios-i` and reference them here.
+![Surge Panel](./images/iOS-3.png)
 
 ---
 
-## 🧩 Policy groups (core)
+## 🧩 Policy Groups (Core)
 
-| Group | Purpose | Priority (left → right) |
+| Group | Purpose | Priority (Left → Right) |
 |---|---|---|
-| **YouTube** | YouTube streaming | HK → SG → US → JP → KR → TW |
-| **Netflix** | Netflix streaming | HK → TW → JP → KR → SG → US |
-| **Disney+** | Disney+ | HK → SG → US → JP → KR → TW |
-| **Hulu** | Hulu | HK → TW → SG → US → JP → KR |
-| **HBO Max** | HBO Max | HK → TW → JP → KR → SG → US |
+| **YouTube** | YouTube video | HK → US → SG → JP → KR → TW |
+| **Netflix** | Netflix video | HK  → SG → US→ Rare Areas |
+| **Disney+** | Disney+ | US →HK → SG → JP → KR → TW |
+| **Hulu** | Hulu | US → HK →SG →  TW → JP → KR |
+| **HBO Max** | HBO Max | HK →  US → SG →Rare Areas |
 | **Prime Video** | Amazon Prime Video | HK → TW → JP → KR → SG → US |
-| **Paramount+** | Paramount+ | HK → SG → US → TW → JP → KR |
-| **Starz** | Starz | US → HK → SG |
-| **Google** | Google services | HK → US → TW → JP → KR → SG |
-| **PayPal** | Payments | US → HK → SG |
-| **Rare Areas** | Auto bucket for other regions | (negatively matched from “My Nodes”, excluding HK/US/JP/KR/TW/SG keywords) |
+| **Paramount+** | Paramount+ | US → HK → SG → TW → JP → KR |
+| **STARZ** | STARZ | US |
+| **Google** | Google services | HK → US → Rare Areas |
+| **PayPal** | Payments | US |
+| **Rare Areas** | Auto-bucket for other regions | (Collect nodes from “My Nodes” by negative regex that excludes HK/US/JP/KR/TW/SG) |
 
 ---
 
-## 🧱 Rule sources & credits
+## 🧱 Rule Sources & Credits
 
-- Base: Rabbit-Spec Surge general skeleton  
-- Rules: BlackMatrix7 · Surge (YouTube/Netflix/Disney/HBO/Hulu/Prime/Paramount+/GlobalMedia/China/Google/Apple/Microsoft/Telegram/Twitter/TikTok/GitHub/PayPal, etc.)  
-- Icons: Koolson/Qure IconSet · Orz-3/mini Color
+- Base: Rabbit‑Spec Surge general skeleton  
+- Rules: BlackMatrix7 · Surge (YouTube / Netflix / Disney / HBO / Hulu / Prime / Paramount+ / GlobalMedia / China / Google / Apple / Microsoft / Telegram / Twitter / TikTok / GitHub / PayPal, etc.)  
+- Icons: Koolson/Qure IconSet · Orz‑3/mini Color
 
-> If your node names don’t include region keywords or flags, adjust `policy-regex-filter` in the config.
+> If your node names do not contain region keywords or flags, please modify the `policy-regex-filter` in the config accordingly.
 
 ---
 
-## 🙌 Contribute
+## 🙌 Contributing
 
-PRs/Issues are welcome—especially **Surge iOS** feedback and screenshots.
+**Feel free to use this or open issues.**
 
 ## 🛫 My Providers
 
-- [**Flower** — very well-known; often the first choice for streaming. ~~Because I can’t afford TAG, just kidding~~](https://api-flowercloud.com/aff.php?aff=13383)
-- [**YToo** — Flower’s sub-brand; same features, slightly lower cost. Comes with an Emby I don’t use much. ](https://y-too.com/aff.php?aff=7148)
-- [**Shouhou Network (SNTP)** — mid-to-high-end, cost-effective dedicated lines (includes a high-quality Emby server).  ](https://d.xn--hwqp2zit2amna.net/auth/register?code=BcADJolY)
-
+- [**Flower**: very well-known; usually the first choice for streaming users. ~~(Can’t afford TAG, jk)~~](https://api-flowercloud.com/aff.php?aff=13383)
+- [**YToo**: a sub-site of Flower, same features with slightly lower cost. Includes an Emby that I don’t find very useful.](https://y-too.com/aff.php?aff=7148)
+- [**SNTP**: cost‑effective dedicated lines at mid/high tier (bundled high‑quality Emby server).](https://d.xn--hwqp2zit2amna.net/auth/register?code=BcADJolY)

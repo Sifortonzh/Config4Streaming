@@ -30,7 +30,10 @@
 ├─ Surge4Streaming.conf
 └─ images/
    ├─ Mac-1.png
-   └─ Mac-2.png
+   ├─ Mac-2.png
+   ├─ iOS-1.png
+   ├─ iOS-2.png
+   └─ iOS-3.png
 ```
 
 ---
@@ -55,8 +58,8 @@
 
 ## 📱 iOS
 
-![Surge Panel](./images/iOS-1.png)![Surge Panel](./images/iOS-2.png)
-
+![Surge Panel](./images/iOS-1.png)
+![Surge Panel](./images/iOS-2.png)
 ![Surge Panel](./images/iOS-3.png)
 
 ---

@@ -10,7 +10,7 @@
 
 ---
 
-## ✨ Key Features
+# Key Features
 
 - **Independent policy groups and priorities** for mainstream streaming platforms (YouTube / Netflix / Disney+ / Hulu / HBO Max / Prime Video / Paramount+ / STARZ).
 - Regional groups (HK/US/JP/KR/TW/SG) + smart **Rare Areas** (automatically collects other unrecognized regions).
@@ -23,7 +23,37 @@
 
 ---
 
-## 📦 Directory Structure
+# Directory Structure
+
+# Repository Layout
+
+```
+Config4Streaming/
+├─ Surge4Streaming.conf        
+├─ rules/                       # list view
+│  ├─ AI.list
+│  ├─ ESPN.list
+│  ├─ Google.list
+│  ├─ HBOMax.list
+│  ├─ Other_US.list
+│  ├─ aol.list
+│  ├─ proton.list
+│  └─ yandex.list
+├─ modules/                    # Surge JavaScript for ADBlock
+│  ├─ baidupan_remove_ad.js
+│  ├─ bilibili_player_ad.js
+│  ├─ ...
+├─ images/                     # Surge screenshots
+│  ├─ Mac-1.png
+│  ├─ Mac-2.png
+│  └─ ...
+├─ icons/                       YOUKU.png
+├─ README.md
+└─ README-zh.md
+```
+
+> All list files contain pure rule entries without policy fields and can be directly referenced using Surge RULE-SET.
+
 
 ```bash
 .
@@ -38,7 +68,7 @@
 
 ---
 
-## 🧭 Quick Start (Surge · macOS)
+# Quick Start (Surge · macOS)
 
 1. Download [`Surge4Streaming.conf`](./Surge4Streaming.conf).  
 2. In **Surge** → **Profiles** → **Open External Profile**, import the file. Or download from URL:
@@ -56,7 +86,7 @@
 
 ---
 
-## 📱 iOS
+# iOS
 
 ![Surge Panel](./images/iOS-1.png)
 ![Surge Panel](./images/iOS-2.png)
@@ -64,7 +94,7 @@
 
 ---
 
-## 🧩 Policy Groups (Core)
+# Policy Groups (Core)
 
 | Group | Purpose | Priority (Left → Right) |
 |---|---|---|
@@ -82,7 +112,7 @@
 
 ---
 
-## 🧱 Rule Sources & Credits
+# Rule Sources & Credits
 
 - Base: Rabbit‑Spec Surge general skeleton  
 - Rules: BlackMatrix7 · Surge (YouTube / Netflix / Disney / HBO / Hulu / Prime / Paramount+ / GlobalMedia / China / Google / Apple / Microsoft / Telegram / Twitter / TikTok / GitHub / PayPal, etc.)  
@@ -92,11 +122,11 @@
 
 ---
 
-## 🙌 Contributing
+# Contributing
 
 **Feel free to use this or open issues.**
 
-## 🛫 My Providers
+# My Providers
 
 - [**Flower**: very well-known; usually the first choice for streaming users. ~~(Can’t afford TAG, jk)~~](https://api-flowercloud.com/aff.php?aff=13383)
 - [**YToo**: a sub-site of Flower, same features with slightly lower cost. Includes an Emby that I don’t find very useful.](https://y-too.com/aff.php?aff=7148)

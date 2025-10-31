@@ -1,0 +1,16 @@
+# --- HBO Max / Max (全集规则，推荐) ---
+USER-AGENT,HBOMAX*
+USER-AGENT,HBO%20NOW*
+PROCESS-NAME,com.hbo.hbonow
+
+# 关键域名（Max 新老域+常见播放器/分发）
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,hbonow.com
+DOMAIN-SUFFIX,hbo.com
+DOMAIN-SUFFIX,warnermediacdn.com
+DOMAIN-SUFFIX,players.brightcove.net
+DOMAIN-SUFFIX,manifest.prod.boltdns.net
+DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com

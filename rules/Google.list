@@ -38,3 +38,13 @@ DOMAIN-SUFFIX,google.se
 DOMAIN-SUFFIX,google.ch
 DOMAIN-SUFFIX,google.be
 DOMAIN-SUFFIX,google.com.au
+
+# >>> Google Play / GMS Core
+DOMAIN-SUFFIX,play.google.com
+DOMAIN-SUFFIX,play.googleapis.com
+DOMAIN-SUFFIX,android.clients.google.com
+DOMAIN-SUFFIX,accounts.google.com
+DOMAIN-SUFFIX,ssl.google-analytics.com
+DOMAIN-SUFFIX,clients3.google.com
+DOMAIN-SUFFIX,clients4.google.com
+DOMAIN-SUFFIX,clients6.google.com

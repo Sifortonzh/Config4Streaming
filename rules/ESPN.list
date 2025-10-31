@@ -1,0 +1,18 @@
+# >>> ESPN+ → ESPN+ 组
+# 主域/静态资源
+DOMAIN-SUFFIX,espn.com
+DOMAIN-SUFFIX,espncdn.com
+DOMAIN-SUFFIX,espn.net
+DOMAIN,espn.go.com
+
+# ESPN+ 鉴权/播放（BAMTech 边缘域）
+DOMAIN,espn.api.edge.bamgrid.com
+DOMAIN,espn.playback.edge.bamgrid.com
+DOMAIN,espn.connections.edge.bamgrid.com
+
+# 其他可能用到的域（官方检测到的相关域名）
+DOMAIN-SUFFIX,espnqa.com
+DOMAIN-SUFFIX,espn.co.uk
+DOMAIN-SUFFIX,fn-pz.com
+DOMAIN,espn.hb.omtrdc.net
+DOMAIN,espndotcom.tt.omtrdc.net

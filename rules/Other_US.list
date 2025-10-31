@@ -1,0 +1,47 @@
+# === Talkatone ===
+# 说明：Talkatone 是美国 VoIP 通话/短信 App，需走 US 节点以正常注册与通话。
+DOMAIN-SUFFIX,talkatone.com
+DOMAIN-SUFFIX,talkatone.me
+DOMAIN-SUFFIX,talkatone.co
+DOMAIN-SUFFIX,voipgrid.nl
+DOMAIN-SUFFIX,twilio.com
+DOMAIN-SUFFIX,twiliocdn.com
+DOMAIN-SUFFIX,twilio.org
+DOMAIN-SUFFIX,twilioassets.com
+USER-AGENT,Talkatone*
+PROCESS-NAME,com.talkatone.android
+
+# >>> TMDB (The Movie Database) → 🇺🇸United States
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-KEYWORD,tmdb
+
+
+# 规则：其他未分类域名规则
+DOMAIN-SUFFIX,espn.com
+DOMAIN-SUFFIX,espncdn.com
+DOMAIN-SUFFIX,espn.net
+DOMAIN,espn.go.com
+DOMAIN,espn.api.edge.bamgrid.com
+DOMAIN,espn.playback.edge.bamgrid.com
+DOMAIN,espn.connections.edge.bamgrid.com
+DOMAIN-SUFFIX,espnqa.com
+DOMAIN-SUFFIX,espn.co.uk
+DOMAIN-SUFFIX,fn-pz.com
+DOMAIN,espn.hb.omtrdc.net
+DOMAIN,espndotcom.tt.omtrdc.net
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,aiplatform.googleapis.com
+DOMAIN-SUFFIX,hf.space
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,stability.ai
+DOMAIN-SUFFIX,api.stability.ai
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicate.delivery
+DOMAIN-SUFFIX,runwayml.com
+DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,x.ai

@@ -1,0 +1,57 @@
+# === Common Global AI Services → policy: AI ===
+# OpenAI / ChatGPT
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN,chatgpt.livekit.cloud
+
+# Anthropic (Claude)
+DOMAIN-SUFFIX,anthropic.com
+
+# Google AI (Gemini / PaLM / Generative Language / Vertex AI)
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,aiplatform.googleapis.com
+
+# Microsoft Copilot / Azure OpenAI / Azure AI Inference
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-KEYWORD,openai.azure
+DOMAIN-SUFFIX,ai.azure.com
+DOMAIN-SUFFIX,models.inference.ai.azure.com
+
+# Hugging Face
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.space
+
+# Perplexity / Poe
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,poe.com
+
+# Stability / Replicate / Runway
+DOMAIN-SUFFIX,stability.ai
+DOMAIN-SUFFIX,api.stability.ai
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicate.delivery
+DOMAIN-SUFFIX,runwayml.com
+
+# ElevenLabs / TTS
+DOMAIN-SUFFIX,elevenlabs.io
+
+# Mistral / Groq / Cohere / OpenRouter
+DOMAIN-SUFFIX,mistral.ai
+DOMAIN-SUFFIX,api.mistral.ai
+DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,api.groq.com
+DOMAIN-SUFFIX,cohere.ai
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,api.openrouter.ai
+
+# xAI / Leonardo / Luma / Pika / Midjourney
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,leonardo.ai
+DOMAIN-SUFFIX,lumalabs.ai
+DOMAIN-SUFFIX,luma.ai
+DOMAIN-SUFFIX,pika.art
+DOMAIN-SUFFIX,midjourney.com

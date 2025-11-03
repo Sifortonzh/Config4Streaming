@@ -1,0 +1,12 @@
+# >>> SubHD 字幕站 → 代理（🛫）
+DOMAIN-SUFFIX,subhd.tv
+DOMAIN-SUFFIX,subhd.cc
+DOMAIN-SUFFIX,subhd.me
+DOMAIN-SUFFIX,subhd.la
+DOMAIN-SUFFIX,subhdtw.com
+DOMAIN-KEYWORD,subhd
+
+# >>> TMDB (The Movie Database) → 🇺🇸United States
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-KEYWORD,tmdb

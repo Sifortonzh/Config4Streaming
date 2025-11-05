@@ -1,12 +1,12 @@
-# Config4Streaming · Enjoy All Streaming
+# Wannatring · ShengXi — Geometry of Flowing Voices  
 
-[中文 → README-zh.md](./README-zh.md)
-
-> A Surge streaming split configuration that tries to faithfully reproduce my **Loon** setup.
-
-- **Config file**: [`Surge4Streaming.conf`](./Surge4Streaming.conf)  
-- **Loon edition**: please refer to → https://github.com/Sifortonzh/Loon4Streaming  
-- **Status**: iOS/macOS screenshots included.
+> *ShengXi* is the streaming configuration branch of the **Wannatring** series,  
+> focusing on the intelligent segmentation of global media traffic, rule refinement,  
+> and the aesthetic of network routing.  
+>
+> For the **Chinese version**, please refer to [README-zh.md](./README-zh.md)  
+>
+> **Loon version** available at → https://github.com/Sifortonzh/Loon4Streaming
 
 ---
 

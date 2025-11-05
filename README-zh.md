@@ -1,8 +1,9 @@
-# 专为流媒体——声临其浸
+# 桓亭·声汐 —— 流动之声，媒介的几何  
 
-本项目提供 Surge / Loon 等工具通用的分流规则配置，聚焦流媒体平台、AI 服务、邮箱系统与开发者常用服务。
-
-> 若需**英文**版，请参考 [README.md](./README.md)
+> 声汐是「桓亭」（Wannatring）体系下的流媒体分流与策略配置项目，  
+> 专注于全球流媒体访问的智能划分、规则纯化与节点逻辑美学。  
+>
+> 若需**英文**版，请参考 [README.md](./README.md)  
 >
 > **Loon 版本**：请稳步查看 → https://github.com/Sifortonzh/Loon4Streaming  
 
@@ -11,7 +12,7 @@
 ## ✨ 特性亮点
 
 - 针对主流平台的独立策略组与分流优先级（YouTube / Netflix / Disney+ / HBO Max 等）
-- 按区域细分的智能节点分组：🇭🇰🇺🇸🇯🇵🇰🇷🇹🇼🇸🇬 + 🇵🇷Rare Areas 自动匹配其他节点
+- 按区域细分的智能节点分组：🇭🇰🇺🇸🇯🇵🇰🇷🇨🇳🇸🇬 + 🇵🇷Rare Areas 自动匹配其他节点
 - 常用服务：Google、GitHub、Telegram、X、TikTok、PayPal、Apple、Microsoft、AI 等
 - 架构基于 Rabbit‑Spec Surge 通用骨架 + BlackMatrix7 Surge 分流规则并融入自主构建规则
 - 图标来源：Koolson/Qure + Orz‑3/mini等

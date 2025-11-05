@@ -1,0 +1,12 @@
+# Pinterest
+DOMAIN-SUFFIX,pinterest.com
+DOMAIN-SUFFIX,pinimg.com
+# 常见国家/地区域名（可按需扩充）
+DOMAIN-SUFFIX,pinterest.co.uk
+DOMAIN-SUFFIX,pinterest.jp
+DOMAIN-SUFFIX,pinterest.de
+DOMAIN-SUFFIX,pinterest.fr
+DOMAIN-SUFFIX,pinterest.es
+DOMAIN-SUFFIX,pinterest.ca
+# 关键词兜底（可选）
+DOMAIN-KEYWORD,pinterest

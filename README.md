@@ -25,7 +25,7 @@
 
 # Directory Structure
 
-# Repository Layout
+## Repository Layout
 
 ```
 Config4Streaming/
@@ -80,17 +80,17 @@ Config4Streaming/
 4. Save and enable.
 5. On iOS, using “Modules” requires setting up the certificate; the method is the same as in Loon.
 
-**Screenshots (macOS)**  
-![Surge Panel](./images/Mac-1.png)  
-![Policy Groups Overview](./images/Mac-2.png)
+# Screenshots
+
+## MacOS
+
+![Surge Panel](./images/Mac.png)  
 
 ---
 
-# iOS
+## iOS
 
-![Surge Panel](./images/iOS-1.png)
-![Surge Panel](./images/iOS-2.png)
-![Surge Panel](./images/iOS-3.png)
+![Surge Panel](./images/iOS.png)
 
 ---
 

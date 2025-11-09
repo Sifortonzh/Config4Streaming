@@ -19,7 +19,7 @@
 
 ---
 
-## 📦 仓库结构说明
+## 📦 仓库小览
 
 ```
 Config4Streaming/
@@ -49,7 +49,7 @@ Config4Streaming/
 2. 在 **Surge** → **Profiles** → **Open External Profile** 导入该文件。或从URL下载：
 
    ```bash
-   https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/Surge4Streaming.conf
+https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/Surge4Streaming.conf
    ```
 
 3. 编辑 `policy-path=你的订阅地址` 为你的真实订阅地址。  
@@ -60,22 +60,21 @@ Config4Streaming/
 
 ---
 
-## 📱效果预览
+# 📱效果预览
 
-**macOS** 
-![Surge面板](./images/Mac-1.png)  
-![策略组一览](./images/Mac-2.png)
+## MacOS
 
-**iOS**
-
-![Surge面板](./images/iOS-1.png)
-![Surge面板](./images/iOS-2.png)
-![Surge面板](./images/iOS-3.png)
-
+![Surge面板](./images/Mac.png)  
 
 ---
 
-## 🧩 策略组（核心）
+## iOS
+
+![Surge面板](./images/iOS.png)
+
+---
+
+## 🧩 核心策略
 
 | 组名 | 作用 | 优先顺序（左→右） |
 |---|---|---|
@@ -93,7 +92,7 @@ Config4Streaming/
 
 ---
 
-## 🧱 规则来源与致谢
+## 🧱 规则参考
 
 - 核心架构：Rabbit‑Spec Surge 通用配置框架  
 - 分流规则：BlackMatrix7 · Surge（YouTube / Netflix / Disney / HBO / AI / Google / Apple 等）  
@@ -101,7 +100,7 @@ Config4Streaming/
 
 ---
 
-## 🙌 贡献与反馈
+## 🙌 贡献反馈
 
 欢迎提出改进建议，或通过 issue 反馈问题。你也可以根据自身需求 fork 并维护个性化分支。
 

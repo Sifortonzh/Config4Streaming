@@ -1,0 +1,12 @@
+# 阿里云 / Alibaba Cloud
+DOMAIN-SUFFIX,alibabacloud.com
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,aliyuncs.com
+DOMAIN-SUFFIX,aliyuncs.com.cn
+DOMAIN-SUFFIX,alicloudapi.com
+DOMAIN-SUFFIX,alicloudccp.com
+DOMAIN-SUFFIX,alidns.com
+DOMAIN-SUFFIX,alicdn.com
+# 关联的万网（阿里云域名与解析）
+DOMAIN-SUFFIX,hichina.com
+DOMAIN-SUFFIX,hichina.cn

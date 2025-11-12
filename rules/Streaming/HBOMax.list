@@ -1,16 +1,123 @@
-# --- HBO Max / Max (全集规则，推荐) ---
-USER-AGENT,HBOMAX*
-USER-AGENT,HBO%20NOW*
-PROCESS-NAME,com.hbo.hbonow
-
-# 关键域名（Max 新老域+常见播放器/分发）
-DOMAIN-SUFFIX,max.com
+# === Max / HBO Max Streaming ===
+# ---
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:58
+# DOMAIN-SUFFIX: 47
+# PROCESS-NAME: 1
+# USER-AGENT: 2
+# TOTAL: 50
+# ---
+DOMAIN-SUFFIX,bcbolthboa-a.akamaihd.net
+DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net
+DOMAIN-SUFFIX,cinemax.com
+DOMAIN-SUFFIX,dai3fd1oh325y.cloudfront.net
+DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com
+DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,forthethrone.com
+DOMAIN-SUFFIX,hbo.com
+DOMAIN-SUFFIX,hbo.com.c.footprint.net
+DOMAIN-SUFFIX,hbo.com.edgesuite.net
+DOMAIN-SUFFIX,hbo.map.fastly.net
+DOMAIN-SUFFIX,hboasia.com
+DOMAIN-SUFFIX,hboasia1-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia2-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia3-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia4-i.akamaihd.net
+DOMAIN-SUFFIX,hboasia5-i.akamaihd.net
+DOMAIN-SUFFIX,hboasialive.akamaized.net
+DOMAIN-SUFFIX,hbogeo.cust.footprint.net
+DOMAIN-SUFFIX,hbogo.co.th
+DOMAIN-SUFFIX,hbogo.com
+DOMAIN-SUFFIX,hbogo.eu
+DOMAIN-SUFFIX,hbogoasia.com
+DOMAIN-SUFFIX,hbogoasia.hk
+DOMAIN-SUFFIX,hbogoasia.id
+DOMAIN-SUFFIX,hbogoasia.ph
+DOMAIN-SUFFIX,hbogoasia.sg
+DOMAIN-SUFFIX,hbogoasia.tw
+DOMAIN-SUFFIX,hbogoprod-vod.akamaized.net
+DOMAIN-SUFFIX,hbolb.onwardsmg.com
 DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,hbomaxdash.s.llnwi.net
 DOMAIN-SUFFIX,hbonow.com
-DOMAIN-SUFFIX,hbo.com
-DOMAIN-SUFFIX,warnermediacdn.com
-DOMAIN-SUFFIX,players.brightcove.net
+DOMAIN-SUFFIX,hbounify-prod.evergent.com
 DOMAIN-SUFFIX,manifest.prod.boltdns.net
-DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
-DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,maxgo.com
+DOMAIN-SUFFIX,now-ashare.com
+DOMAIN-SUFFIX,now-tv.com
+DOMAIN-SUFFIX,now.com
+DOMAIN-SUFFIX,now.com.hk
+DOMAIN-SUFFIX,nowe.com
+DOMAIN-SUFFIX,nowe.hk
+DOMAIN-SUFFIX,players.brightcove.net
+DOMAIN-SUFFIX,warnermediacdn.com
+DOMAIN-SUFFIX,youboranqs01.com
+USER-AGENT,HBO%20NOW*
+USER-AGENT,HBOMAX*
+PROCESS-NAME,com.hbo.hbonow
+
+# ---
+# author: Sifortonzh
+# Core domains
+# ---
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,hbo.com
+DOMAIN-SUFFIX,hboasia.com
+DOMAIN-SUFFIX,hbogoasia.com
+DOMAIN-SUFFIX,hbogoasia.hk
+DOMAIN-SUFFIX,hbogoasia.com.sg
+DOMAIN-SUFFIX,hbogo.com
+DOMAIN-SUFFIX,api-hbo.com
+DOMAIN-SUFFIX,play.hbomax.com
+DOMAIN,api.hbo.com
+
+# Max CDN & media assets
+DOMAIN-SUFFIX,media.hbomaxcdn.com
+DOMAIN-SUFFIX,media.hbo.com
+DOMAIN-SUFFIX,hbo.com.edgesuite.net
+DOMAIN-SUFFIX,hbomaxcdn.com
+DOMAIN-SUFFIX,hbocdn.com
+DOMAIN-SUFFIX,akamaized.net
+
+# Authentication & API
+DOMAIN-SUFFIX,auth.hbomax.com
+DOMAIN-SUFFIX,edge.bamgrid.com
+DOMAIN-SUFFIX,bam.nr-data.net
+DOMAIN-SUFFIX,discomax.com
+DOMAIN-SUFFIX,prod.hbomax.com
+DOMAIN-SUFFIX,api.max.com
+
+# Warner Bros / Discovery+ shared backends
+DOMAIN-SUFFIX,discoveryplus.com
+DOMAIN-SUFFIX,warnerbros.com
+DOMAIN-SUFFIX,wb.com
+DOMAIN-SUFFIX,turner.com
+
+# DRM / license
+DOMAIN-SUFFIX,widevine.google.com
+DOMAIN-SUFFIX,playready.microsoft.com
+DOMAIN-SUFFIX,drm-license.one.microsoft.com
+DOMAIN-SUFFIX,cert.intel.com
+DOMAIN-SUFFIX,license.hbomax.com
+DOMAIN-SUFFIX,license.max.com
+
+# Telemetry / analytics (可选屏蔽)
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,scorecardresearch.com
+DOMAIN-SUFFIX,conviva.com
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,app-measurement.com
+
+# Ads / Tracking (可选屏蔽)
+DOMAIN-SUFFIX,ads.twitter.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,google-analytics.com
+
+# === Notes ===
+# 建议此 list 对应策略组为 Streaming 或 US Media
+# 若解锁不完全，请确保 DNS 分流优先走美区解析（例如 Rera Area / 美国节点）

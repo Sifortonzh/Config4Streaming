@@ -1,0 +1,21 @@
+# === Fansly Taiwan Redirect ===
+# Core
+DOMAIN-SUFFIX,fansly.com
+DOMAIN-SUFFIX,fanslycdn.com
+
+# Media CDN
+DOMAIN-SUFFIX,fanslycontent.com
+DOMAIN-SUFFIX,fanslymedia.com
+
+# Image CDN
+DOMAIN-SUFFIX,fcdn.app
+DOMAIN-SUFFIX,fcdn.io
+
+# API / login
+DOMAIN,api.fansly.com
+DOMAIN-SUFFIX,auth.fansly.com
+
+# Cloudflare edges
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudflarestream.com
+DOMAIN-SUFFIX,cf-ipfs.com

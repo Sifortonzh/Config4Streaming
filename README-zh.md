@@ -12,7 +12,7 @@ Atrioly · A quiet interface for modern life.
 
 ---
 
-## ✨ 特性亮点
+# ✨ 特性亮点
 
 - 针对主流平台的独立策略组与分流优先级（YouTube / Netflix / Disney+ / HBO Max 等）
 - 按区域细分的智能节点分组：🇭🇰🇺🇸🇯🇵🇰🇷🇨🇳🇸🇬 + 🇺🇳Rare Areas自动匹配其他节点
@@ -22,7 +22,7 @@ Atrioly · A quiet interface for modern life.
 
 ---
 
-## 📦 仓库小览
+# 📦 仓库小览
 
 ```
 Config4Streaming/
@@ -45,14 +45,14 @@ Config4Streaming/
 
 ---
 
-## 🚀 快速上手（以 Surge 为例）
+# 🚀 快速上手（以 Surge 为例）
 
 1. 下载 [`Surge4Streaming.conf`](./Surge4Streaming.conf)。  
 
 2. 在 **Surge** → **Profiles** → **Open External Profile** 导入该文件。或从URL下载：
 
    ```bash
-https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/Surge4Streaming.conf
+   https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/Surge4Streaming.conf
    ```
 
 3. 编辑 `policy-path=你的订阅地址` 为你的真实订阅地址。  
@@ -77,7 +77,7 @@ https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/Su
 
 ---
 
-## 🧩 核心策略
+# 🧩 核心策略
 
 | 组名 | 作用 | 优先顺序（左→右） |
 |---|---|---|
@@ -95,7 +95,7 @@ https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/Su
 
 ---
 
-## 🧱 规则参考
+# 🧱 规则参考
 
 - 核心架构：Rabbit‑Spec Surge 通用配置框架  
 - 分流规则：BlackMatrix7 · Surge（YouTube / Netflix / Disney / HBO / AI / Google / Apple 等）  
@@ -103,6 +103,6 @@ https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/Su
 
 ---
 
-## 🙌 贡献反馈
+# 🙌 贡献反馈
 
 欢迎提出改进建议，或通过 issue 反馈问题。你也可以根据自身需求 fork 并维护个性化分支。

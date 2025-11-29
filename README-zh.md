@@ -1,6 +1,9 @@
-# 桓亭·声汐 —— 流动之声，媒介的几何  
+Atrioly · A quiet interface for modern life.  
+序栖｜于纷扰人间，自置一隅静界。
 
-> 声汐是「桓亭」（Wannatring）体系下的流媒体分流与策略配置项目，  
+# 序栖·声汐 —— 流动之声，媒介的几何  
+
+> 声汐是 **Atrioly / 序栖** 体系下的流媒体分流与策略配置项目，  
 > 专注于全球流媒体访问的智能划分、规则纯化与节点逻辑美学。  
 >
 > 若需**英文**版，请参考 [README.md](./README.md)  
@@ -12,7 +15,7 @@
 ## ✨ 特性亮点
 
 - 针对主流平台的独立策略组与分流优先级（YouTube / Netflix / Disney+ / HBO Max 等）
-- 按区域细分的智能节点分组：🇭🇰🇺🇸🇯🇵🇰🇷🇨🇳🇸🇬 + 🇵🇷Rare Areas 自动匹配其他节点
+- 按区域细分的智能节点分组：🇭🇰🇺🇸🇯🇵🇰🇷🇨🇳🇸🇬 + 🇺🇳Rare Areas自动匹配其他节点
 - 常用服务：Google、GitHub、Telegram、X、TikTok、PayPal、Apple、Microsoft、AI 等
 - 架构基于 Rabbit‑Spec Surge 通用骨架 + BlackMatrix7 Surge 分流规则并融入自主构建规则
 - 图标来源：Koolson/Qure + Orz‑3/mini等
@@ -103,11 +106,3 @@ https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/Su
 ## 🙌 贡献反馈
 
 欢迎提出改进建议，或通过 issue 反馈问题。你也可以根据自身需求 fork 并维护个性化分支。
-
----
-
-## 🛫 自用机场
-
-- [**花云（Flower）**：大名鼎鼎，不用过多介绍。基本上是流媒体人的第一选择。~~因为用不起TAG,bushi~~](https://api-flowercloud.com/aff.php?aff=13383)
-- [**歪兔（YToo）**：Flower的子站，功能一致，费用略低。送一个我不怎么觉得好用的Emby](https://y-too.com/aff.php?aff=7148)
-- [**守候网络（SNTP）**：中高端的高性价比专线机场（赠送高质量Emby服）](https://d.xn--hwqp2zit2amna.net/auth/register?code=BcADJolY)

@@ -1,6 +1,9 @@
-# Wannatring · ShengXi — Geometry of Flowing Voices  
+Atrioly · A quiet interface for modern life.  
+序栖｜于纷扰人间，自置一隅静界。
 
-> *ShengXi* is the streaming configuration branch of the **Wannatring** series,  
+# Atrioly · ShengXi — Geometry of Flowing Voices  
+
+> *ShengXi* is the streaming configuration project under the **Atrioly / 序栖 (XuQi)** brand,  
 > focusing on the intelligent segmentation of global media traffic, rule refinement,  
 > and the aesthetic of network routing.  
 >
@@ -125,9 +128,3 @@ Config4Streaming/
 # Contributing
 
 **Feel free to use this or open issues.**
-
-# My Providers
-
-- [**Flower**: very well-known; usually the first choice for streaming users. ~~(Can’t afford TAG, jk)~~](https://api-flowercloud.com/aff.php?aff=13383)
-- [**YToo**: a sub-site of Flower, same features with slightly lower cost. Includes an Emby that I don’t find very useful.](https://y-too.com/aff.php?aff=7148)
-- [**SNTP**: cost‑effective dedicated lines at mid/high tier (bundled high‑quality Emby server).](https://d.xn--hwqp2zit2amna.net/auth/register?code=BcADJolY)

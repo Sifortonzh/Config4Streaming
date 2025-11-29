@@ -1,6 +1,3 @@
-Atrioly · A quiet interface for modern life.  
-序栖｜于纷扰人间，自置一隅静界。
-
 # Atrioly · ShengXi — Geometry of Flowing Voices  
 
 > *ShengXi* is the streaming configuration project under the **Atrioly / 序栖 (XuQi)** brand,  

@@ -11,37 +11,29 @@ DOMAIN-SUFFIX,twilioassets.com
 USER-AGENT,Talkatone*
 PROCESS-NAME,com.talkatone.android
 
+
 # >>> TMDB (The Movie Database) → 🇺🇸United States
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
 DOMAIN-KEYWORD,tmdb
 
 
-# 规则：其他未分类域名规则
-DOMAIN-SUFFIX,espn.com
-DOMAIN-SUFFIX,espncdn.com
-DOMAIN-SUFFIX,espn.net
-DOMAIN,espn.go.com
-DOMAIN,espn.api.edge.bamgrid.com
-DOMAIN,espn.playback.edge.bamgrid.com
-DOMAIN,espn.connections.edge.bamgrid.com
-DOMAIN-SUFFIX,espnqa.com
-DOMAIN-SUFFIX,espn.co.uk
-DOMAIN-SUFFIX,fn-pz.com
-DOMAIN,espn.hb.omtrdc.net
-DOMAIN,espndotcom.tt.omtrdc.net
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,ai.google.dev
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,aiplatform.googleapis.com
-DOMAIN-SUFFIX,hf.space
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,stability.ai
-DOMAIN-SUFFIX,api.stability.ai
-DOMAIN-SUFFIX,replicate.com
-DOMAIN-SUFFIX,replicate.delivery
-DOMAIN-SUFFIX,runwayml.com
-DOMAIN-SUFFIX,elevenlabs.io
-DOMAIN-SUFFIX,x.ai
+# === Dia Browser → 🇺🇸United States ===
+# 说明：Dia 为 The Browser Company 推出的 AI 浏览器，依赖美国区服务。
+# 建议将本 Rule-Set 指向 US 节点，实现 Dia 全量走 US。
+
+# Dia 官方站点与公司域名
+DOMAIN-SUFFIX,diabrowser.com
+DOMAIN-SUFFIX,thebrowser.company
+DOMAIN-SUFFIX,bcny.com
+DOMAIN-SUFFIX,arc.net
+
+# Dia Blocklists / 工程相关域名
+DOMAIN-SUFFIX,diabrowser.engineering
+DOMAIN-SUFFIX,dia-blocklists-release.diabrowser.engineering
+
+# Dia 应用进程（macOS）
+# （如使用基于 PROCESS-NAME 的分流：Surge / Loon / Quantumult X 等）
+PROCESS-NAME,Dia
+PROCESS-NAME,Dia Browser
+PROCESS-NAME,diabrowser

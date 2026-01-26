@@ -10,3 +10,8 @@ DOMAIN-SUFFIX,starz.com
 DOMAIN-SUFFIX,starzplay.com
 DOMAIN-SUFFIX,starzplayarabia.com
 DOMAIN-KEYWORD,starz
+DOMAIN-SUFFIX,starz.com,STARZ
+DOMAIN-SUFFIX,starzplay.com,STARZ
+DOMAIN-SUFFIX,starzplayarabia.com,STARZ
+DOMAIN-KEYWORD,starz,STARZ
+USER-AGENT,STARZ*,STARZ

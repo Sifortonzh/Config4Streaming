@@ -1,0 +1,16 @@
+# === PH/gcash ===
+# ---
+# AUTHOR: Sifortonzh
+# UPDATED: 2026-01-26 15:14:46
+# DOMAIN-SUFFIX: 5
+# DOMAIN-KEYWORD: 3
+# TOTAL: 8
+# ---
+DOMAIN-SUFFIX,gcash.com
+DOMAIN-SUFFIX,gcash.ph
+DOMAIN-SUFFIX,help.gcash.com
+DOMAIN-SUFFIX,g-xchange.com
+DOMAIN-SUFFIX,mynt.xyz
+DOMAIN-KEYWORD,gcash
+DOMAIN-KEYWORD,g-xchange
+DOMAIN-KEYWORD,mynt

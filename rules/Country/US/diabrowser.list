@@ -1,0 +1,19 @@
+# === Dia Browser → 🇺🇸United States ===
+# 说明：Dia 为 The Browser Company 推出的 AI 浏览器，依赖美国区服务。
+# 建议将本 Rule-Set 指向 US 节点，实现 Dia 全量走 US。
+
+# Dia 官方站点与公司域名
+DOMAIN-SUFFIX,diabrowser.com
+DOMAIN-SUFFIX,thebrowser.company
+DOMAIN-SUFFIX,bcny.com
+DOMAIN-SUFFIX,arc.net
+
+# Dia Blocklists / 工程相关域名
+DOMAIN-SUFFIX,diabrowser.engineering
+DOMAIN-SUFFIX,dia-blocklists-release.diabrowser.engineering
+
+# Dia 应用进程（macOS）
+# （如使用基于 PROCESS-NAME 的分流：Surge / Loon / Quantumult X 等）
+PROCESS-NAME,Dia
+PROCESS-NAME,Dia Browser
+PROCESS-NAME,diabrowser

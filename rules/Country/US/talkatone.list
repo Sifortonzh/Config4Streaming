@@ -1,0 +1,12 @@
+# === Talkatone ===
+# 说明：Talkatone 是美国 VoIP 通话/短信 App，需走 US 节点以正常注册与通话。
+DOMAIN-SUFFIX,talkatone.com
+DOMAIN-SUFFIX,talkatone.me
+DOMAIN-SUFFIX,talkatone.co
+DOMAIN-SUFFIX,voipgrid.nl
+DOMAIN-SUFFIX,twilio.com
+DOMAIN-SUFFIX,twiliocdn.com
+DOMAIN-SUFFIX,twilio.org
+DOMAIN-SUFFIX,twilioassets.com
+USER-AGENT,Talkatone*
+PROCESS-NAME,com.talkatone.android

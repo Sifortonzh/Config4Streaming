@@ -1,0 +1,6 @@
+# Blockchain Explorers (Etherscan family)
+DOMAIN-SUFFIX,etherscan.io
+DOMAIN-SUFFIX,bscscan.com
+DOMAIN-SUFFIX,polygonscan.com
+DOMAIN-SUFFIX,arbiscan.io
+DOMAIN-SUFFIX,optimistic.etherscan.io

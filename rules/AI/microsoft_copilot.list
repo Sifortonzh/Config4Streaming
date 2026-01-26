@@ -1,0 +1,7 @@
+# Microsoft Copilot / Azure AI
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-KEYWORD,openai.azure
+DOMAIN-SUFFIX,ai.azure.com
+DOMAIN-SUFFIX,models.inference.ai.azure.com
+DOMAIN-SUFFIX,cognitive.microsoft.com
+DOMAIN-SUFFIX,speech.microsoft.com

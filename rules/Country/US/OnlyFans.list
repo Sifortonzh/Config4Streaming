@@ -1,0 +1,10 @@
+# >>> OnlyFans
+
+DOMAIN-SUFFIX,onlyfans.com
+DOMAIN-SUFFIX,onlyfans.site
+DOMAIN-SUFFIX,of.tv
+
+# Common media/CDN
+DOMAIN-SUFFIX,onlyfans-cdn.com
+
+DOMAIN-KEYWORD,onlyfans

@@ -1,0 +1,22 @@
+# >>> Netflav
+# Type: Surge RULE-SET list
+# Suggested Policy: 🇭🇰Hong Kong
+
+# Main
+DOMAIN-SUFFIX,netflav.com
+
+# Common subdomains (assets / preview / cdn)
+DOMAIN,www.netflav.com
+DOMAIN,assets.netflav.com
+DOMAIN,cdn.netflav.com
+DOMAIN,preview.netflav.com
+
+# Observed CDN / delivery hosts
+# (BunnyCDN style host)
+DOMAIN,netflav.b-cdn.net
+
+# Observed cross-site host (netflav as a subdomain under missav.com)
+DOMAIN,netflav.missav.com
+
+# Fallback (catch potential new hosts containing "netflav")
+DOMAIN-KEYWORD,netflav

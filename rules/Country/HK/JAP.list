@@ -1,3 +1,44 @@
+# >>> AV Sites (HK)
+# Type: Surge RULE-SET list
+# Suggested Policy: 🇭🇰Hong Kong
+
+# MissAV / Netflav
+DOMAIN-SUFFIX,missav.com
+DOMAIN-SUFFIX,missav.ws
+DOMAIN-KEYWORD,missav
+
+DOMAIN-SUFFIX,netflav.com
+DOMAIN-KEYWORD,netflav
+
+# 常见 JAV 聚合/索引（尽量只命中成人相关域名）
+DOMAIN-SUFFIX,jable.tv
+DOMAIN-KEYWORD,jable
+
+DOMAIN-SUFFIX,javdb.com
+DOMAIN-KEYWORD,javdb
+
+DOMAIN-SUFFIX,javbus.com
+DOMAIN-KEYWORD,javbus
+
+DOMAIN-SUFFIX,javlibrary.com
+DOMAIN-KEYWORD,javlibrary
+
+DOMAIN-SUFFIX,jav.guru
+DOMAIN-KEYWORD,jav.guru
+
+DOMAIN-SUFFIX,javhdporn.net
+DOMAIN-KEYWORD,javhd
+
+DOMAIN-SUFFIX,thisav.com
+DOMAIN-KEYWORD,thisav
+
+DOMAIN-SUFFIX,av01.tv
+DOMAIN-SUFFIX,avple.tv
+DOMAIN-SUFFIX,javmost.com
+DOMAIN-SUFFIX,jav321.com
+DOMAIN-SUFFIX,javstream.top
+DOMAIN-SUFFIX,javforme.ninja
+
 DOMAIN-SUFFIX,dmm.co.jp
 DOMAIN-SUFFIX,cdn.dmm.co.jp
 DOMAIN-SUFFIX,r18.com

@@ -1,7 +1,26 @@
-# Google AI (Gemini)
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,ai.google.dev
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,aiplatform.googleapis.com
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,googleapis.com
+# >>> Gemini (Google)
+# Type: Surge RULE-SET list
+# Suggested Policy: Gemini
+
+# Gemini Web
+DOMAIN,gemini.google.com
+DOMAIN-SUFFIX,gemini.google
+
+# Google AI Studio (API key / prompts / console-like UI)
+DOMAIN,aistudio.google.com
+
+# Gemini API (Generative Language API)
+DOMAIN,generativelanguage.googleapis.com
+
+# Docs / entry points (often used to jump to AI Studio / API pages)
+DOMAIN,ai.google.dev
+
+# Legacy / redirects (optional but recommended for compatibility)
+DOMAIN,makersuite.google.com
+
+# ---- Optional: if you have login / callback issues, uncomment below ----
+# (These are shared Google auth endpoints; enabling may route broader Google sign-in via this policy.)
+# DOMAIN,accounts.google.com
+# DOMAIN,oauth2.googleapis.com
+# DOMAIN-SUFFIX,gstatic.com
+# DOMAIN-SUFFIX,googleusercontent.com

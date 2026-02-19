@@ -2,6 +2,10 @@
 # Type: Surge RULE-SET list
 # Suggested Policy: 🇭🇰Hong Kong
 
+# CN Community
+DOMAIN-SUFFIX,sis001.com
+DOMAIN-KEYWORD,sis001
+
 # MissAV / Netflav
 DOMAIN-SUFFIX,missav.com
 DOMAIN-SUFFIX,missav.ws

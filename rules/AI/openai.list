@@ -1,6 +1,32 @@
 # >>> OpenAI / ChatGPT
 # Type: Surge RULE-SET list
 # Suggested Policy: ChatGPT
+# NAME: OpenAI
+# AUTHOR: OpenAI ChatGPT
+# UPDATED: 2026-03-23
+# TYPE: Surge Rule Set
+# DESCRIPTION: OpenAI / ChatGPT services
+
+# OpenAI core
+DOMAIN-SUFFIX,openai.com
+DOMAIN,platform.openai.com
+DOMAIN,api.openai.com
+DOMAIN,auth.openai.com
+
+# ChatGPT
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN,android.chat.openai.com
+
+# Static assets / uploads
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+
+# Optional dependencies
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,ct.sendgrid.net
 
 # Core OpenAI domains (covers platform.openai.com/auth/callback)
 DOMAIN-SUFFIX,openai.com

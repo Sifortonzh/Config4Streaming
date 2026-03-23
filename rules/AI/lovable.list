@@ -1,0 +1,16 @@
+# >>> Lovable
+# Type: Surge RULE-SET list
+# Suggested Policy: Lovable
+# Updated: 2026-03-23
+# Notes:
+# - Covers Lovable editor, docs, pricing, support pages under lovable.dev
+# - Covers published Lovable apps under *.lovable.app
+
+# Lovable official web/editor/docs
+DOMAIN-SUFFIX,lovable.dev
+DOMAIN,lovable.dev
+DOMAIN,docs.lovable.dev
+DOMAIN,feedback.lovable.dev
+
+# Published Lovable projects
+DOMAIN-SUFFIX,lovable.app

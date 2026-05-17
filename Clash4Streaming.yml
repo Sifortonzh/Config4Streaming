@@ -1,0 +1,731 @@
+mixed-port: 7897
+allow-lan: false
+mode: rule
+log-level: warning
+# Clash4Streaming generic template
+# Replace proxy-providers.Privilege.url with your own Clash/Mihomo-compatible subscription URL before use.
+# Do not publish a file containing your real subscription token.
+ipv6: false
+unified-delay: true
+tcp-concurrent: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+proxy-providers:
+  Privilege:
+    type: http
+    url: https://example.com/your-subscription-url
+    path: ./proxy_provider/Privilege.yaml
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+proxy-groups:
+- name: Group
+  type: select
+  proxies:
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇺🇸United States
+  - 🇯🇵Japan
+  - 🇰🇷South Korea
+  - 🇨🇳Taiwan
+  - 🇬🇧United Kingdom
+  - 🇩🇪Germany
+  - 🇫🇷France
+  - 🇦🇺Australia
+  - 🇨🇦Canada
+  - 🇲🇴Macau
+  - 🇮🇳India
+  - 🇲🇾Malaysia
+  - 🇵🇭Philippines
+  - 🇺🇳Rare Areas
+  - Privilege
+- name: 🇭🇰Hong Kong
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇭🇰|香港|Hong|HK)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇸🇬Singapore
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇸🇬|新加坡|🇸🇬Singapore|SG)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇺🇸United States
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇺🇸|美国|States|US|USA)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇯🇵Japan
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇯🇵|日本|🇯🇵Japan|JP)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇨🇳Taiwan
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇨🇳|台湾|Tai|TW)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇰🇷South Korea
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇰🇷|韩国|Korea|KR)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇬🇧United Kingdom
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇬🇧|英国|United.?Kingdom|UK)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇩🇪Germany
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇩🇪|德国|Germany|DE)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇫🇷France
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇫🇷|法国|France|FR)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇦🇺Australia
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇦🇺|澳大利亚|Australia|AU)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇨🇦Canada
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇨🇦|加拿大|Canada|CA)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇲🇴Macau
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇲🇴|澳门|Macau|MO)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇳India
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇮🇳|印度|India|IN)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇲🇾Malaysia
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇲🇾|马来西亚|Malaysia|MY)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇵🇭Philippines
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)(🇵🇭|菲律宾|Philippines|PH)
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇺🇳Rare Areas
+  type: url-test
+  use:
+  - Privilege
+  filter: (?i)^(?!.*(🇭🇰|香港|Hong|HK|🇺🇸|美国|States|US|USA|🇯🇵|日本|Japan|JP|🇹🇼|台湾|Tai|TW|🇰🇷|韩国|Korea|KR|🇸🇬|新加坡|Singapore|SG|🇬🇧|英国|United.?Kingdom|UK|🇩🇪|德国|Germany|DE|🇫🇷|法国|France|FR|🇦🇺|澳大利亚|Australia|AU|🇨🇦|加拿大|Canada|CA|🇲🇴|澳门|Macau|MO|🇮🇳|印度|India|IN|🇲🇾|马来西亚|Malaysia|MY|🇵🇭|菲律宾|Philippines|PH)).+
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: PayPal
+  type: select
+  proxies:
+  - 🇺🇸United States
+- name: Telegram
+  type: select
+  proxies:
+  - Group
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇯🇵Japan
+- name: Amazon
+  type: select
+  proxies:
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇯🇵Japan
+  - 🇰🇷South Korea
+  - 🇨🇳Taiwan
+  - 🇺🇳Rare Areas
+- name: Twitter
+  type: select
+  proxies:
+  - Group
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇯🇵Japan
+- name: Google
+  type: select
+  proxies:
+  - 🇭🇰Hong Kong
+  - 🇺🇸United States
+  - 🇬🇧United Kingdom
+  - 🇺🇳Rare Areas
+- name: YouTube
+  type: select
+  proxies:
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇮🇳India
+  - 🇺🇳Rare Areas
+- name: Netflix
+  type: select
+  proxies:
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇺🇸United States
+  - 🇮🇳India
+  - 🇲🇴Macau
+  - 🇺🇳Rare Areas
+  - 🇨🇳Taiwan
+  - 🇯🇵Japan
+  - 🇰🇷South Korea
+- name: HBO Max
+  type: select
+  proxies:
+  - 🇭🇰Hong Kong
+  - 🇺🇸United States
+  - 🇸🇬Singapore
+  - 🇺🇳Rare Areas
+  - 🇨🇳Taiwan
+- name: Disney+
+  type: select
+  proxies:
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇯🇵Japan
+  - 🇰🇷South Korea
+  - 🇨🇳Taiwan
+  - 🇺🇳Rare Areas
+- name: STARZ
+  type: select
+  proxies:
+  - 🇺🇸United States
+- name: Paramount+
+  type: select
+  proxies:
+  - 🇺🇸United States
+  - 🇺🇳Rare Areas
+- name: Peacock
+  type: select
+  proxies:
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇺🇳Rare Areas
+- name: Hulu
+  type: select
+  proxies:
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇨🇳Taiwan
+  - 🇺🇳Rare Areas
+- name: Viu
+  type: select
+  proxies:
+  - 🇸🇬Singapore
+  - 🇭🇰Hong Kong
+  - 🇺🇸United States
+  - 🇺🇳Rare Areas
+- name: Prime Video
+  type: select
+  proxies:
+  - 🇭🇰Hong Kong
+  - 🇨🇳Taiwan
+  - 🇯🇵Japan
+  - 🇰🇷South Korea
+  - 🇸🇬Singapore
+  - 🇺🇸United States
+  - 🇺🇳Rare Areas
+- name: ESPN+
+  type: select
+  proxies:
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇯🇵Japan
+  - 🇰🇷South Korea
+  - 🇨🇳Taiwan
+  - 🇺🇳Rare Areas
+- name: Spotify
+  type: select
+  proxies:
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇺🇳Rare Areas
+- name: Gemini
+  type: select
+  proxies:
+  - Group
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+- name: ChatGPT
+  type: select
+  proxies:
+  - Group
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+- name: GitHub
+  type: select
+  proxies:
+  - 🇭🇰Hong Kong
+  - 🇯🇵Japan
+  - 🇸🇬Singapore
+  - 🇺🇸United States
+- name: TikTok
+  type: select
+  proxies:
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇨🇳Taiwan
+  - 🇯🇵Japan
+  - 🇰🇷South Korea
+  - 🇸🇬Singapore
+- name: Meta
+  type: select
+  proxies:
+  - Group
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇯🇵Japan
+  - 🇺🇳Rare Areas
+- name: Pinterest
+  type: select
+  proxies:
+  - Group
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇯🇵Japan
+  - 🇺🇳Rare Areas
+- name: Finance
+  type: select
+  proxies:
+  - 🇨🇳Taiwan
+  - 🇺🇳Rare Areas
+  - 🇺🇸United States
+  - 🇭🇰Hong Kong
+  - 🇯🇵Japan
+  - 🇰🇷South Korea
+  - 🇸🇬Singapore
+- name: YOUKU
+  type: select
+  proxies:
+  - DIRECT
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇺🇸United States
+- name: WeTV
+  type: select
+  proxies:
+  - DIRECT
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇺🇸United States
+  - 🇺🇳Rare Areas
+- name: iQIYI
+  type: select
+  proxies:
+  - DIRECT
+  - 🇭🇰Hong Kong
+  - 🇸🇬Singapore
+  - 🇺🇸United States
+  - 🇺🇳Rare Areas
+rule-providers:
+  PayPal:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list
+    path: ./ruleset/PayPal.yaml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
+    path: ./ruleset/Telegram.yaml
+    interval: 86400
+  AWAvenue-Ads-Rule-Surge-RULE-SET:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/refs/heads/main/Filters/AWAvenue-Ads-Rule-Surge-RULE-SET.list
+    path: ./ruleset/AWAvenue-Ads-Rule-Surge-RULE-SET.yaml
+    interval: 86400
+  GitHub:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list
+    path: ./ruleset/GitHub.yaml
+    interval: 86400
+  Twitter:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list
+    path: ./ruleset/Twitter.yaml
+    interval: 86400
+  TikTok:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.list
+    path: ./ruleset/TikTok.yaml
+    interval: 86400
+  Google:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
+    path: ./ruleset/Google.yaml
+    interval: 86400
+  Binance:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Binance/Binance.list
+    path: ./ruleset/Binance.yaml
+    interval: 86400
+  YouTube:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list
+    path: ./ruleset/YouTube.yaml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list
+    path: ./ruleset/Netflix.yaml
+    interval: 86400
+  Disney:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list
+    path: ./ruleset/Disney.yaml
+    interval: 86400
+  Hulu:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hulu/Hulu.list
+    path: ./ruleset/Hulu.yaml
+    interval: 86400
+  AmazonPrimeVideo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AmazonPrimeVideo/AmazonPrimeVideo.list
+    path: ./ruleset/AmazonPrimeVideo.yaml
+    interval: 86400
+  ParamountPlus:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ParamountPlus/ParamountPlus.list
+    path: ./ruleset/ParamountPlus.yaml
+    interval: 86400
+  Peacock:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Peacock/Peacock.list
+    path: ./ruleset/Peacock.yaml
+    interval: 86400
+  ViuTV:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/ViuTV/ViuTV.list
+    path: ./ruleset/ViuTV.yaml
+    interval: 86400
+  Youku:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Youku/Youku.list
+    path: ./ruleset/Youku.yaml
+    interval: 86400
+  WeTV:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/WeTV/WeTV.list
+    path: ./ruleset/WeTV.yaml
+    interval: 86400
+  iQIYI:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/iQIYI/iQIYI.list
+    path: ./ruleset/iQIYI.yaml
+    interval: 86400
+  Spotify:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Spotify/Spotify.list
+    path: ./ruleset/Spotify.yaml
+    interval: 86400
+  HBOMax:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/HBOMax.list
+    path: ./ruleset/HBOMax.yaml
+    interval: 86400
+  Peacock_2:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/Peacock.list
+    path: ./ruleset/Peacock_2.yaml
+    interval: 86400
+  starz:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/starz.list
+    path: ./ruleset/starz.yaml
+    interval: 86400
+  Viu:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/Viu.list
+    path: ./ruleset/Viu.yaml
+    interval: 86400
+  amcplus:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/amcplus.list
+    path: ./ruleset/amcplus.yaml
+    interval: 86400
+  PayPal_2:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/PayPal.list
+    path: ./ruleset/PayPal_2.yaml
+    interval: 86400
+  Google_2:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Google.list
+    path: ./ruleset/Google_2.yaml
+    interval: 86400
+  Twitter_2:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Twitter.list
+    path: ./ruleset/Twitter_2.yaml
+    interval: 86400
+  openai:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/AI/openai.list
+    path: ./ruleset/openai.yaml
+    interval: 86400
+  gemini:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/AI/gemini.list
+    path: ./ruleset/gemini.yaml
+    interval: 86400
+  Fansly:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Fansly.list
+    path: ./ruleset/Fansly.yaml
+    interval: 86400
+  OnlyFans:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/OnlyFans.list
+    path: ./ruleset/OnlyFans.yaml
+    interval: 86400
+  aol:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/aol.list
+    path: ./ruleset/aol.yaml
+    interval: 86400
+  proton:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/proton.list
+    path: ./ruleset/proton.yaml
+    interval: 86400
+  yandex:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/yandex.list
+    path: ./ruleset/yandex.yaml
+    interval: 86400
+  netflav:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/rules/Country/HK/netflav.list
+    path: ./ruleset/netflav.yaml
+    interval: 86400
+  JAP:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/HK/JAP.list
+    path: ./ruleset/JAP.yaml
+    interval: 86400
+  Meta:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Meta.list
+    path: ./ruleset/Meta.yaml
+    interval: 86400
+  Pinterest:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Pinterest.list
+    path: ./ruleset/Pinterest.yaml
+    interval: 86400
+  talkatone:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/US/talkatone.list
+    path: ./ruleset/talkatone.yaml
+    interval: 86400
+  hk:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/HK/hk.list
+    path: ./ruleset/hk.yaml
+    interval: 86400
+  lovable:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/AI/lovable.list
+    path: ./ruleset/lovable.yaml
+    interval: 86400
+  pikpak:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/SG/pikpak.list
+    path: ./ruleset/pikpak.yaml
+    interval: 86400
+  bitget:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/bitget.list
+    path: ./ruleset/bitget.yaml
+    interval: 86400
+  bybit:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/bybit.list
+    path: ./ruleset/bybit.yaml
+    interval: 86400
+  safepal:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/safepal.list
+    path: ./ruleset/safepal.yaml
+    interval: 86400
+  okx:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/okx.list
+    path: ./ruleset/okx.yaml
+    interval: 86400
+  DIRECT:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/Direct/DIRECT.list
+    path: ./ruleset/DIRECT.yaml
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list
+    path: ./ruleset/ChinaMedia.yaml
+    interval: 86400
+  ChinaMax_All:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_All.list
+    path: ./ruleset/ChinaMax_All.yaml
+    interval: 86400
+rules:
+- RULE-SET,PayPal,PayPal
+- RULE-SET,Telegram,Telegram
+- RULE-SET,AWAvenue-Ads-Rule-Surge-RULE-SET,REJECT
+- RULE-SET,GitHub,GitHub,no-resolve
+- RULE-SET,Twitter,Twitter
+- RULE-SET,TikTok,TikTok
+- RULE-SET,Google,Google
+- RULE-SET,Binance,Finance
+- RULE-SET,YouTube,YouTube
+- RULE-SET,Netflix,Netflix
+- RULE-SET,Disney,Disney+
+- RULE-SET,Hulu,Hulu
+- RULE-SET,AmazonPrimeVideo,Prime Video
+- RULE-SET,ParamountPlus,Paramount+
+- RULE-SET,Peacock,Peacock
+- RULE-SET,ViuTV,Viu
+- RULE-SET,Youku,YOUKU
+- RULE-SET,WeTV,WeTV
+- RULE-SET,iQIYI,iQIYI
+- RULE-SET,Spotify,Spotify
+- RULE-SET,HBOMax,HBO Max
+- RULE-SET,Peacock_2,Peacock
+- RULE-SET,starz,STARZ
+- RULE-SET,Viu,Viu
+- RULE-SET,amcplus,🇺🇸United States
+- DOMAIN-SUFFIX,youku.com,YOUKU
+- DOMAIN-SUFFIX,ykimg.com,YOUKU
+- DOMAIN-SUFFIX,tudou.com,YOUKU
+- DOMAIN-SUFFIX,soku.com,YOUKU
+- DOMAIN-SUFFIX,wetv.vip,WeTV
+- DOMAIN-SUFFIX,wetvinfo.com,WeTV
+- DOMAIN-KEYWORD,wetv,WeTV
+- DOMAIN-SUFFIX,iq.com,iQIYI
+- RULE-SET,PayPal_2,PayPal
+- RULE-SET,Google_2,Google
+- RULE-SET,Twitter_2,Twitter
+- RULE-SET,openai,ChatGPT
+- RULE-SET,gemini,Gemini
+- RULE-SET,Fansly,🇨🇳Taiwan
+- RULE-SET,OnlyFans,🇨🇳Taiwan
+- RULE-SET,aol,🇺🇸United States
+- RULE-SET,proton,Group
+- RULE-SET,yandex,🇺🇳Rare Areas
+- RULE-SET,netflav,🇭🇰Hong Kong
+- RULE-SET,JAP,🇭🇰Hong Kong
+- RULE-SET,Meta,Meta
+- RULE-SET,Pinterest,Pinterest
+- RULE-SET,talkatone,🇺🇸United States
+- RULE-SET,hk,🇭🇰Hong Kong
+- RULE-SET,lovable,🇭🇰Hong Kong
+- RULE-SET,pikpak,🇸🇬Singapore
+- RULE-SET,bitget,Finance
+- RULE-SET,bybit,Finance
+- RULE-SET,safepal,Finance
+- RULE-SET,okx,Finance
+- RULE-SET,DIRECT,DIRECT
+- RULE-SET,ChinaMedia,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- RULE-SET,ChinaMax_All,DIRECT
+- MATCH,Group

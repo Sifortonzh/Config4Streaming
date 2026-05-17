@@ -25,6 +25,7 @@ proxy-groups:
 - name: Group
   type: select
   proxies:
+  - DIRECT
   - 🇭🇰Hong Kong
   - 🇸🇬Singapore
   - 🇺🇸United States
@@ -41,7 +42,6 @@ proxy-groups:
   - 🇲🇾Malaysia
   - 🇵🇭Philippines
   - 🇺🇳Rare Areas
-  - Privilege
 - name: 🇭🇰Hong Kong
   type: url-test
   use:
@@ -368,300 +368,350 @@ rule-providers:
   PayPal:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list
     path: ./ruleset/PayPal.yaml
     interval: 86400
   Telegram:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
     path: ./ruleset/Telegram.yaml
     interval: 86400
   AWAvenue-Ads-Rule-Surge-RULE-SET:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/refs/heads/main/Filters/AWAvenue-Ads-Rule-Surge-RULE-SET.list
     path: ./ruleset/AWAvenue-Ads-Rule-Surge-RULE-SET.yaml
     interval: 86400
   GitHub:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list
     path: ./ruleset/GitHub.yaml
     interval: 86400
   Twitter:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list
     path: ./ruleset/Twitter.yaml
     interval: 86400
   TikTok:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.list
     path: ./ruleset/TikTok.yaml
     interval: 86400
   Google:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
     path: ./ruleset/Google.yaml
     interval: 86400
   Binance:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Binance/Binance.list
     path: ./ruleset/Binance.yaml
     interval: 86400
   YouTube:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list
     path: ./ruleset/YouTube.yaml
     interval: 86400
   Netflix:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list
     path: ./ruleset/Netflix.yaml
     interval: 86400
   Disney:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list
     path: ./ruleset/Disney.yaml
     interval: 86400
   Hulu:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hulu/Hulu.list
     path: ./ruleset/Hulu.yaml
     interval: 86400
   AmazonPrimeVideo:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AmazonPrimeVideo/AmazonPrimeVideo.list
     path: ./ruleset/AmazonPrimeVideo.yaml
     interval: 86400
   ParamountPlus:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ParamountPlus/ParamountPlus.list
     path: ./ruleset/ParamountPlus.yaml
     interval: 86400
   Peacock:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Peacock/Peacock.list
     path: ./ruleset/Peacock.yaml
     interval: 86400
   ViuTV:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/ViuTV/ViuTV.list
     path: ./ruleset/ViuTV.yaml
     interval: 86400
   Youku:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Youku/Youku.list
     path: ./ruleset/Youku.yaml
     interval: 86400
   WeTV:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/WeTV/WeTV.list
     path: ./ruleset/WeTV.yaml
     interval: 86400
   iQIYI:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/iQIYI/iQIYI.list
     path: ./ruleset/iQIYI.yaml
     interval: 86400
   Spotify:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Spotify/Spotify.list
     path: ./ruleset/Spotify.yaml
     interval: 86400
   HBOMax:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/HBOMax.list
     path: ./ruleset/HBOMax.yaml
     interval: 86400
   Peacock_2:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/Peacock.list
     path: ./ruleset/Peacock_2.yaml
     interval: 86400
   starz:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/starz.list
     path: ./ruleset/starz.yaml
     interval: 86400
   Viu:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/Viu.list
     path: ./ruleset/Viu.yaml
     interval: 86400
   amcplus:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Streaming/amcplus.list
     path: ./ruleset/amcplus.yaml
     interval: 86400
   PayPal_2:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/PayPal.list
     path: ./ruleset/PayPal_2.yaml
     interval: 86400
   Google_2:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Google.list
     path: ./ruleset/Google_2.yaml
     interval: 86400
   Twitter_2:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Twitter.list
     path: ./ruleset/Twitter_2.yaml
     interval: 86400
   openai:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/AI/openai.list
     path: ./ruleset/openai.yaml
     interval: 86400
   gemini:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/AI/gemini.list
     path: ./ruleset/gemini.yaml
     interval: 86400
   Fansly:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Fansly.list
     path: ./ruleset/Fansly.yaml
     interval: 86400
   OnlyFans:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/OnlyFans.list
     path: ./ruleset/OnlyFans.yaml
     interval: 86400
   aol:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/aol.list
     path: ./ruleset/aol.yaml
     interval: 86400
   proton:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/proton.list
     path: ./ruleset/proton.yaml
     interval: 86400
   yandex:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/yandex.list
     path: ./ruleset/yandex.yaml
     interval: 86400
   netflav:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/rules/Country/HK/netflav.list
     path: ./ruleset/netflav.yaml
     interval: 86400
   JAP:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/HK/JAP.list
     path: ./ruleset/JAP.yaml
     interval: 86400
   Meta:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Meta.list
     path: ./ruleset/Meta.yaml
     interval: 86400
   Pinterest:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Social/Pinterest.list
     path: ./ruleset/Pinterest.yaml
     interval: 86400
   talkatone:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/US/talkatone.list
     path: ./ruleset/talkatone.yaml
     interval: 86400
   hk:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/HK/hk.list
     path: ./ruleset/hk.yaml
     interval: 86400
   lovable:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/AI/lovable.list
     path: ./ruleset/lovable.yaml
     interval: 86400
   pikpak:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/SG/pikpak.list
     path: ./ruleset/pikpak.yaml
     interval: 86400
   bitget:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/bitget.list
     path: ./ruleset/bitget.yaml
     interval: 86400
   bybit:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/bybit.list
     path: ./ruleset/bybit.yaml
     interval: 86400
   safepal:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/safepal.list
     path: ./ruleset/safepal.yaml
     interval: 86400
   okx:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Finance/okx.list
     path: ./ruleset/okx.yaml
     interval: 86400
   DIRECT:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/refs/heads/main/rules/Country/Direct/DIRECT.list
     path: ./ruleset/DIRECT.yaml
     interval: 86400
   ChinaMedia:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list
     path: ./ruleset/ChinaMedia.yaml
     interval: 86400
   ChinaMax_All:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_All.list
     path: ./ruleset/ChinaMax_All.yaml
     interval: 86400

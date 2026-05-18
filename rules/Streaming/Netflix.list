@@ -1,0 +1,54 @@
+# === Netflix Streaming ===
+# ---
+# AUTHOR: Sifortonzh / Config4Streaming
+# PURPOSE: Netflix / Fast.com routing for Surge, Clash/Mihomo classical rule-provider
+# UPDATED: 2026-05-18
+# FORMAT: Surge-style classical list
+# NOTE:
+# 1. Keep this list above ad-block / reject rules.
+# 2. Do not put Netflix behind generic auto URL-test only; manually choose a Netflix/NF unlock node when needed.
+# 3. Avoid adding large IP-CIDR ranges here. Netflix CDN IPs change frequently and may cause false routing.
+# ---
+
+# Core
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,netflixdnstest0.com
+DOMAIN-SUFFIX,netflixdnstest1.com
+DOMAIN-SUFFIX,netflixdnstest2.com
+DOMAIN-SUFFIX,netflixdnstest3.com
+DOMAIN-SUFFIX,netflixdnstest4.com
+DOMAIN-SUFFIX,netflixdnstest5.com
+DOMAIN-SUFFIX,netflixdnstest6.com
+DOMAIN-SUFFIX,netflixdnstest7.com
+DOMAIN-SUFFIX,netflixdnstest8.com
+DOMAIN-SUFFIX,netflixdnstest9.com
+DOMAIN-SUFFIX,netflixdnstest10.com
+
+# Netflix CDN / API / Static assets
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxsearch.net
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
+
+# Netflix speed test / region probe
+DOMAIN-SUFFIX,fast.com
+
+# Extra Netflix-owned / account / corporate domains
+DOMAIN-SUFFIX,netflix.ca
+DOMAIN-SUFFIX,netflix.com.au
+DOMAIN-SUFFIX,netflix.com.edgesuite.net
+DOMAIN-SUFFIX,netflixinvestor.com
+DOMAIN-SUFFIX,netflixtechblog.com
+
+# Keywords: conservative catch-all for new Netflix hostnames
+DOMAIN-KEYWORD,netflix
+DOMAIN-KEYWORD,nflx
+
+# App / Client hints
+USER-AGENT,Netflix*
+USER-AGENT,Argo*
+PROCESS-NAME,com.netflix.Netflix
+PROCESS-NAME,com.netflix.mediaclient

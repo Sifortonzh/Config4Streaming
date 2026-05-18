@@ -220,16 +220,15 @@ proxy-groups:
 - name: Netflix
   type: select
   proxies:
-  - 🇺🇸United States
   - 🇭🇰Hong Kong
   - 🇸🇬Singapore
-  - 🇯🇵Japan
-  - 🇨🇳Taiwan
-  - 🇰🇷South Korea
+  - 🇺🇸United States
+  - 🇮🇳India
+  - 🇲🇴Macau
   - 🇺🇳Rare Areas
-  - DIRECT
-  use:
-  - Privilege
+  - 🇨🇳Taiwan
+  - 🇯🇵Japan
+  - 🇰🇷South Korea
 - name: HBO Max
   type: select
   proxies:
@@ -453,7 +452,7 @@ rule-providers:
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list
+    url: https://raw.githubusercontent.com/Sifortonzh/Config4Streaming/main/rules/Streaming/Netflix.list
     path: ./ruleset/Netflix.yaml
     interval: 86400
   Disney:

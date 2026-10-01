@@ -47,7 +47,24 @@ Config4Streaming/
 
 # 🚀 快速上手（以 Surge 为例）
 
-1. 下载 [`Surge4Streaming.conf`](./Surge4Streaming.conf)。  
+## 本地 MESL / SNTP 一键同步
+
+双击 [`tools/sync.command`](./tools/sync.command)：先显示脱敏差异并校验，再选 `1` 更新 iCloud 和公开配置，或选 `2` 同时通过 SSH 发布 GitHub。首次使用先运行 `python3 tools/surge_sync.py --init`，不会改动原始配置。
+
+- 公共模板：[`templates/Surge.shared.conf`](./templates/Surge.shared.conf)。模板内 `# @private:` 是私有字段占位符，请保留。
+- 也可以继续在 iCloud 的 `MESL.conf` 或 `SNTP.conf` 修改公共规则；工具自动提取相对于上次同步的修改，并同步到另一份配置和公共模板。
+- 初始化前已有的配置差异保留；新增修改发生冲突时停止，并显示脱敏冲突内容，不覆盖文件。
+- 节点、订阅、证书及凭据从各自当前配置原样回填。涉及订阅的整行或 `[Proxy]` 整段作为私有内容，不跨配置同步；该行的其他选项也分别保留。
+- 默认只预览；`python3 tools/surge_sync.py --apply --reload` 执行同步并重新加载当前 Surge 配置，添加 `--publish` 同步发布。使用 `--source MESL` 或 `--source SNTP` 可指定提取来源，但不会强行覆盖另一份的冲突。
+- 本地基线及含隐私的备份在 Git 忽略的 `.surge-sync/`，不会提交到 GitHub。备份文件名有 `iCloud-` / `repo-` 前缀；需恢复时从对应备份复制回原文件，并同时恢复该备份的 `state.json`。不要强制提交私有目录。
+- `.surge-sync/state.json` 绑定首次初始化的 iCloud 目录。其他用户通过 `--icloud /你的目录` 指定自己的位置。需要本地 Python 3、Git 和 Surge macOS 校验工具。
+- 两份仓库配置作为统一公共模板的公开输出；`Surge4Streaming_0131.conf` 保留旧链接，但不再维护独立旧版逻辑。公开输出使用 `https://example.com/subscription`，使用时替换成自己的订阅。
+
+工具会检查发布文件是否包含当前私有信息，只提交指定公共文件；已有 Git 暂存内容或远端新提交时停止发布。GitHub 推送失败时，本地同步和备份仍保留；解决 SSH/网络问题后再次运行发布即可。支持冲突检测和防覆盖检查，但不支持多人同时运行同步工具。
+
+同步测试：`python3 -m unittest discover -s tools -p 'test_*.py'`。英文说明见 [README.md](./README.md#local-mesl--sntp-sync)。
+
+1. 下载 [`Surge4Streaming.conf`](./Surge4Streaming.conf)。
 
 2. 在 **Surge** → **Profiles** → **Open External Profile** 导入该文件。或从URL下载：
 

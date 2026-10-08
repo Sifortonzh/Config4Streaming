@@ -45,6 +45,9 @@ class SyncTests(unittest.TestCase):
         incoming = 'a\n\n\nb\n'
         self.assertNotIn('closed.test', sync.merge(local, base, incoming, 'test'))
 
+    def test_comment_only_conflict_preserves_current(self):
+        self.assertEqual(sync.merge('a\n# local\nb\n', 'a\n# base\nb\n', 'a\n# shared\nb\n', 'test'), 'a\n# local\nb\n')
+
     def test_integration_preview_apply_idempotence_and_conflict(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

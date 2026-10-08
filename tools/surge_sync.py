@@ -137,7 +137,8 @@ def merge(current, base, incoming, label):
             conflict = re.compile(r'^<<<<<<<[^\n]*\n(.*?)^=======\n(.*?)^>>>>>>>[^\n]*\n', re.M | re.S)
             def resolve_whitespace(match):
                 left, right = match.group(1), match.group(2)
-                return left if left.strip() == right.strip() == '' else match.group(0)
+                comments_only = all(not line.strip() or (line.lstrip().startswith('#') and not MARKER.match(line)) for line in (left + right).splitlines())
+                return left if comments_only else match.group(0)
             resolved = conflict.sub(resolve_whitespace, proc.stdout)
             if proc.returncode > 0 and '<<<<<<<' not in resolved and '>>>>>>>' not in resolved:
                 return resolved

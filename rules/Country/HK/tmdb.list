@@ -1,4 +1,3 @@
-# >>> TMDB (The Movie Database) → 🇺🇸United States
+# TMDb website, API and image CDN; policy is assigned by the importing profile.
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
-DOMAIN-KEYWORD,tmdb
